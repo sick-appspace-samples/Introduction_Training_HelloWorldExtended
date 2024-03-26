@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest>
+    <application name="Introduction_Training_HelloWorldExtended">
+        <crown name="Introduction_Training_HelloWorldExtended">
+            <desc>user script</desc>
+        </crown>
+        <crown name="Engine">
+            <desc>no description yet</desc>
+            <uses>
+                <event name="OnStarted"/>
+            </uses>
+        </crown>
+        <crown name="Timer">
+            <desc>no description yet</desc>
+            <uses>
+                <event name="OnExpired"/>
+                <function name="register"/>
+                <function name="create"/>
+                <function name="setPeriodic"/>
+                <function name="start"/>
+                <function name="setExpirationTime"/>
+            </uses>
+        </crown>
+        <crown name="Log">
+            <desc>no description yet</desc>
+            <uses>
+                <function name="setLevel"/>
+                <function name="info"/>
+                <function name="warning"/>
+                <function name="severe"/>
+            </uses>
+        </crown>
+        <crown name="Image">
+            <desc>no description yet</desc>
+            <uses>
+                <function name="load"/>
+            </uses>
+        </crown>
+        <crown name="Script">
+            <desc>no description yet</desc>
+            <uses>
+                <function name="register"/>
+            </uses>
+        </crown>
+        <meta key="author">AppSpace Sample</meta>
+        <meta key="version">1.0.0</meta>
+        <meta key="priority">low</meta>
+        <meta key="copy-protected">false</meta>
+        <meta key="read-protected">false</meta>
+        <entry default="main.lua" path="scripts"/>
+    </application>
+</manifest>
